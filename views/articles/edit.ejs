@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"><title>Document</title>
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+  <title>Blog</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+         <a class="navbar-brand" href="/">Blog</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+     </div>
+ </nav>
+
+ <section class="post py-4">
+  <div class="container">              
+   <div class="row">
+    <div class="col-md-6">
+      <article class="new-post mb-3 shadow">
+        <h1 class="mb-4">Edit Article</h1>
+        <form action="/articles/<%= article.id %>?_method=PUT" method="POST">
+          <%- include('_form_fields') %>
+        </form>
+      </article>
+    </div>
+    <div class="col-md-2"></div>
+    <aside class="col-md-4">
+      <!--Social Links-->
+      <h4 class="aside-heading mt-4 pl-2">Popular Aurthors</h4>
+      <article class="row author mb-3">
+        <div class="col-sm-4">
+          <img class="img-fluid rounded-circle" alt="" src="/image/elon.jpg">
+        </div>
+        <div class="col-sm-8">
+          <h5 class="m-0">Elon Musk</h5>
+          <p class="m-0">Elon Musk FRS is a Business magnate, industrial designer, and engineer. He is the founder, CEO, CTO, and chief designer of SpaceX; early stage investor, CEO, and product architect of Tesla, Inc.</p>
+       </div>
+      </article>
+      <article class="row author mb-3">
+       <div class="col-sm-4">
+         <img class="img-fluid rounded-circle" alt="" src="/image/bill-gates.jpg">
+       </div>
+       <div class="col-sm-8">
+         <h5 class="m-0">Bill Gates</h5>
+         <p class="m-0">Bill Gates is an American business magnate, software developer, investor, and philanthropist. He is best known as the co-founder of Microsoft Corporation</p>
+      </div>
+      </article>
+      <article class="row author mb-3">
+       <div class="col-sm-4">
+         <img class="img-fluid rounded-circle" alt="" src="/image/sundar.jpg">
+       </div>
+       <div class="col-sm-8">
+         <h5 class="m-0">Sundar Pichai</h5>
+         <p class="m-0">Pichai Sundararajan, better known as Sundar Pichai, is an Indian-American business executive. He is the chief executive officer of Alphabet Inc. and its subsidiary Google.</p>
+      </div>
+     </article>
+     
+    </aside>
+
+  </div>
+ </div>
+</section>
+
+<!--Footer-->
+<footer class="footer py-4">
+    <div class="w-100 text-center credits">
+      <p>Made by Sneh Nandu &copy; 2021. All rights reserved.</p>
+    </div>
+</footer>
+
+
+ 
+</body>
+</html>

@@ -1,0 +1,110 @@
+body{
+  font-family: 'Montserrat',sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+  font-weight: 700;
+  color: aqua;
+} 
+
+
+input{
+  background-color: black !important;
+  color: aqua !important;
+}
+
+/* HEADER */
+a{
+  color: aqua;
+}
+.navbar{
+  background-color: #0B0C10;
+  color: aqua !important;
+}
+
+/* Navbar Main Logo*/
+.navbar-brand{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+
+/*Hero*/
+.jumbotron{
+    margin:0px 0px 0px 0px;
+    border-radius:10px;
+      background: 
+  linear-gradient(
+    rgba(0, 0, 250, 0.25), 
+    rgba(125, 250, 250, 0.45)
+  ),
+  url(https://www.pandasecurity.com/mediacenter/src/uploads/2019/10/pandasecurity-panda-tech-support.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:white !important;
+  height:340px;
+}
+
+
+.header{
+  background-color: #1f2833;
+}
+
+/* Main Blog*/
+
+.blog-posts{
+  background-color: black;
+  color: #c5c6c7;
+}
+
+.card{
+  background-color: #1f2833;
+}
+
+/* Main Blog*/
+
+
+img{
+  border: 2px solid aqua;
+}
+
+.aside-heading{
+  border-left: 3px solid aqua;
+}
+
+.author p{
+  font-size: 0.9rem;
+}
+
+/* Footer*/
+
+.footer{
+  background-color: #1f2833;
+  color: white;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+}
+
+/*New Post Page*/
+textarea{
+  background-color: black !important;
+  color: aqua !important;
+}
+
+hr{
+  background-color: aqua;
+}
+
+.post{
+  background-color:#1f2833;
+  color: white;
+}
+
+.new-post{
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #1f2833;
+  color: white;
+  margin-right: -5rem;
+}
